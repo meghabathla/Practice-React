@@ -1,5 +1,4 @@
-import { useState } from "react";
-import "./App.css";
+import { Cart } from "./components/Cart";
 import { Product } from "./components/Product";
 
 function App() {
@@ -8,6 +7,7 @@ function App() {
       <h1 className="text-3xl font-bold underline"> hello</h1>
 
       <Product />
+      <Cart />
     </>
   );
 }
