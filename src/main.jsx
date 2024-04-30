@@ -2,12 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
-import { EccContextProvider } from "./context/EccomerceContext.jsx";
+import { ProductsProvider } from "./context/useProducts.jsx";
+import { CartProvider } from "./context/useCart.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <EccContextProvider>
-      <App />
-    </EccContextProvider>
+    <ProductsProvider>
+      <CartProvider>
+        <App />
+      </CartProvider>
+    </ProductsProvider>
   </React.StrictMode>
 );
