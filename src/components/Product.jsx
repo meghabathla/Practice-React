@@ -5,6 +5,7 @@ import { useCart } from "../context/useCart";
 export const Product = () => {
   const { products, setProducts } = useProducts();
   const { cart, setCart } = useCart();
+
   const handleCart = (key) => {
     const selectedProduct = products.find((product) => product.key === key);
     setProducts((prevProducts) =>

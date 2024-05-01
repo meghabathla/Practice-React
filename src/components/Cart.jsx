@@ -14,7 +14,7 @@ export const Cart = () => {
   return (
     <div>
       <h3>Cart</h3>
-      <div className="max-w-52 max-h-48 border border-black flex flex-col rounded-md p-4 m-2">
+      <div className="max-w-52 h-auto border border-black flex flex-col rounded-md p-4 m-2">
         {cart.map((product) => (
           <div key={product.key}>
             <div>Name: {product.productName}</div>
